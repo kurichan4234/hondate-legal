@@ -1,0 +1,16 @@
+:root { --main: #E8613D; --main-dark: #C94A2A; --paper: #fffaf6; --ink: #1c1c1e; --muted: #6b6b70; --line: #e4e4e8; --bg: #f7f5f3; }
+@media (prefers-color-scheme: dark) { :root { --ink: #f2f2f5; --muted: #a0a0a8; --line: #333338; --bg: #111113; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.8 -apple-system, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; }
+header { background: linear-gradient(135deg, #F0905A, var(--main-dark)); color: var(--paper); padding: 28px 16px 24px; }
+header .inner, main { max-width: 760px; margin: 0 auto; }
+header a { color: var(--paper); text-decoration: none; font-weight: 800; letter-spacing: .04em; }
+header h1 { margin: 8px 0 0; font-size: 1.6rem; line-height: 1.4; }
+nav { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 12px; font-size: .9rem; }
+nav a { font-weight: 600; opacity: .9; }
+main { padding: 24px 16px 64px; }
+h2 { font-size: 1.15rem; margin: 32px 0 8px; padding-left: 10px; border-left: 4px solid var(--main); }
+ul { padding-left: 1.4em; }
+.meta { color: var(--muted); font-size: .9rem; }
+a { color: var(--main-dark); }
+@media (prefers-color-scheme: dark) { a { color: #FF9A80; } }
